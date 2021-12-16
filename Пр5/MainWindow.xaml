@@ -1,0 +1,48 @@
+﻿<Window x:Class="Пр5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Пр5"
+        mc:Ignorable="d"
+        Title="Практическая работа №5" Height="622" Width="553.832" Icon="Recycle Bin Full4.ico" Background="White" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="548">
+            <MenuItem Header="Файл" Width="50">
+                <MenuItem Header="Рассчитать" Click="Answer_Click"></MenuItem>
+                <MenuItem Header="Очистить" Click="Clear_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="Info_Click" Width="94"></MenuItem>
+            <MenuItem Header="Выход" Click="Exit_Click" Width="49"/>
+        </Menu>
+        <Label Content="Второе произведение" HorizontalAlignment="Left" Margin="365,151,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Первое произведение" HorizontalAlignment="Left" Margin="30,151,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Вторая пара чисел" HorizontalAlignment="Left" Margin="196,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.763,-1.288" Width="153" Height="37" FontSize="16"/>
+        <Label Content="Первая пара чисел" HorizontalAlignment="Left" Margin="195,38,0,0" VerticalAlignment="Top" Height="31" Width="153" FontSize="16"/>
+        <TextBox x:Name="resultMultiplyingSecondPair" HorizontalAlignment="Left" Height="37" Margin="365,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="#FF6B6B6B" FontSize="20" IsReadOnly="True"/>
+        <TextBox x:Name="OneValue" HorizontalAlignment="Left" Height="37" Margin="30,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="#FF6B6B6B" FontSize="20"/>
+        <TextBox x:Name="ThirdValue" HorizontalAlignment="Left" Height="37" Margin="30,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="#FF6B6B6B" FontSize="20"/>
+        <TextBox x:Name="TwoValue" HorizontalAlignment="Left" Height="37" Margin="365,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" BorderBrush="#FF6B6B6B" Background="White" FontSize="20"/>
+        <TextBox x:Name="FourValue" HorizontalAlignment="Left" Height="37" Margin="365,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="#FF6B6B6B" FontSize="20"/>
+        <TextBox x:Name="resultMultiplyingFirstPair" HorizontalAlignment="Left" Height="36" Margin="30,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Background="White" BorderBrush="#FF6B6B6B" FontSize="20" IsReadOnly="True"/>
+        <Button x:Name="Answer" Content="Рассчитать" HorizontalAlignment="Left" Margin="208,182,0,0" VerticalAlignment="Top" Width="128" Height="37" Click="Answer_Click" Background="#FFA2A2A2" BorderBrush="#FF6B6B6B" FontSize="14"/>
+        <Button Content="Удвоить первую пару " HorizontalAlignment="Left" Margin="30,239,0,0" VerticalAlignment="Top" Width="141" Height="40" Background="#FFA5A5A5" BorderBrush="#FF6B6B6B" FontSize="13" Click="DoubleFirstPair_Click"/>
+        <Button Content="Удвоить вторую пару" HorizontalAlignment="Left" Margin="365,239,0,0" VerticalAlignment="Top" Height="40" Width="141" Foreground="Black" BorderBrush="#FF6B6B6B" Background="#FFA7A7A7" Click="DoubleSecondPair_Click"/>
+        <TextBox x:Name="DoubleFirstPair" HorizontalAlignment="Left" Margin="30,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <TextBox x:Name="DoubleSecondPair" HorizontalAlignment="Left" Margin="365,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <TextBox x:Name="hypoenuseOneTriangle" HorizontalAlignment="Left" Margin="30,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <TextBox x:Name="hypoenuseSecondTriangle" HorizontalAlignment="Left" Margin="365,387,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <TextBox x:Name="areaOneTriangle" HorizontalAlignment="Left" Margin="32,508,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="34" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <TextBox x:Name="areaSecondTriangle" HorizontalAlignment="Left" Margin="365,510,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="30" FontSize="20" BorderBrush="#FF6B6B6B"/>
+        <Button Content="Рассчитать площадь" HorizontalAlignment="Left" Margin="32,550,0,0" VerticalAlignment="Top" Width="139" Height="33" Click="AreaOneTriangle_Click"/>
+        <Button Content="Вычислить гипотенузу" HorizontalAlignment="Left" Margin="365,442,0,0" VerticalAlignment="Top" Width="141" Height="35" Click="HypoenuseSecondTriangle_Click"/>
+        <Button Content="Рассчитать площадь" HorizontalAlignment="Left" Margin="365,550,0,0" VerticalAlignment="Top" Width="141" Height="33" Click="AreaSecondTriangle_Click"/>
+        <Button Content="Вычислить гипотенузу" HorizontalAlignment="Left" Margin="30,442,0,0" VerticalAlignment="Top" Width="141" Height="35" Click="HypoenuseOneTriangle_Click"/>
+        <Label Content="Площадь второго треугольника" HorizontalAlignment="Left" Margin="341,482,0,0" VerticalAlignment="Top"/>
+        <Label Content="Площадь первого треугольника" HorizontalAlignment="Left" Margin="16,482,0,0" VerticalAlignment="Top"/>
+        <Label Content="Гипотенуза второго треугольника" HorizontalAlignment="Left" Margin="338,349,0,0" VerticalAlignment="Top"/>
+        <Label Content="Гипотенуза первого треугольника" HorizontalAlignment="Left" Margin="10,349,0,0" VerticalAlignment="Top" Width="198"/>
+        <Label Content="(Катеты первого треугольника)" HorizontalAlignment="Left" Margin="179,57,0,0" VerticalAlignment="Top"/>
+        <Label Content="(Катеты второго треугольника)" HorizontalAlignment="Left" Margin="182,120,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
